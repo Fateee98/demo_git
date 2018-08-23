@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hoc-->
+        <scene sceneID="hrZ-cg-Zg0">
+            <objects>
+                <viewController id="fSZ-M8-mVa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o5A-1b-Zss">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gloomy-Old-Green-Wall-Abstract-Background-iphone-8-wallpaper-ilikewallpaper_com" translatesAutoresizingMaskIntoConstraints="NO" id="Sc0-NF-fLh">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MvH-lg-Xwe">
+                                <rect key="frame" x="0.0" y="80" width="375" height="60"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.23491010273972604" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Basic">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Djs-xu-qMB" kind="show" id="t8O-9X-dS8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Nq-Bs-R39">
+                                <rect key="frame" x="0.0" y="200" width="375" height="60"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.23491010270000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="QFC-wP-MCP"/>
+                                    <constraint firstAttribute="width" constant="375" id="dVo-aV-A2f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Advanced">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lq7-kL-mZ4">
+                                <rect key="frame" x="0.0" y="320" width="375" height="60"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.23491010270000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="UyS-8A-g9U"/>
+                                    <constraint firstAttribute="height" constant="60" id="mcS-Z4-tzz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Pro">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7Nq-Bs-R39" firstAttribute="centerX" secondItem="e0w-og-OBx" secondAttribute="centerX" id="7IK-Vh-h8h"/>
+                            <constraint firstItem="e0w-og-OBx" firstAttribute="trailing" secondItem="MvH-lg-Xwe" secondAttribute="trailing" id="7O6-Qm-3UL"/>
+                            <constraint firstItem="e0w-og-OBx" firstAttribute="bottom" secondItem="Sc0-NF-fLh" secondAttribute="bottom" id="7iu-Jv-AmW"/>
+                            <constraint firstItem="Lq7-kL-mZ4" firstAttribute="leading" secondItem="o5A-1b-Zss" secondAttribute="leading" id="ANp-vm-A9j"/>
+                            <constraint firstItem="Sc0-NF-fLh" firstAttribute="leading" secondItem="e0w-og-OBx" secondAttribute="leading" id="G4l-5c-YeQ"/>
+                            <constraint firstItem="7Nq-Bs-R39" firstAttribute="top" secondItem="MvH-lg-Xwe" secondAttribute="bottom" constant="60" id="MXy-Ml-GIO"/>
+                            <constraint firstItem="e0w-og-OBx" firstAttribute="trailing" secondItem="Sc0-NF-fLh" secondAttribute="trailing" id="V7C-Bt-Vn2"/>
+                            <constraint firstItem="MvH-lg-Xwe" firstAttribute="top" secondItem="e0w-og-OBx" secondAttribute="top" constant="60" id="Xot-Yb-Mmy"/>
+                            <constraint firstAttribute="trailing" secondItem="Lq7-kL-mZ4" secondAttribute="trailing" id="gHN-uQ-uAS"/>
+                            <constraint firstItem="MvH-lg-Xwe" firstAttribute="centerX" secondItem="e0w-og-OBx" secondAttribute="centerX" id="iCX-tc-PcP"/>
+                            <constraint firstItem="7Nq-Bs-R39" firstAttribute="trailing" secondItem="e0w-og-OBx" secondAttribute="trailing" id="mNv-iY-fcM"/>
+                            <constraint firstItem="MvH-lg-Xwe" firstAttribute="leading" secondItem="e0w-og-OBx" secondAttribute="leading" id="rQT-nH-Eww"/>
+                            <constraint firstItem="Lq7-kL-mZ4" firstAttribute="top" secondItem="7Nq-Bs-R39" secondAttribute="bottom" constant="60" id="ulE-Gg-j4G"/>
+                            <constraint firstItem="7Nq-Bs-R39" firstAttribute="leading" secondItem="e0w-og-OBx" secondAttribute="leading" id="vkI-Dj-XDT"/>
+                            <constraint firstItem="Sc0-NF-fLh" firstAttribute="top" secondItem="e0w-og-OBx" secondAttribute="top" id="wE1-jv-Gxz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e0w-og-OBx"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hoc" id="760-gP-Xeu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aZt-gH-fkv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="486" y="-412"/>
+        </scene>
+        <!--Hoc View Controller-->
+        <scene sceneID="DP8-AL-gzD">
+            <objects>
+                <viewController id="Djs-xu-qMB" customClass="Hoc_ViewController" customModule="Sample_Login" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SvN-EK-uWT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v2k-Li-WFg">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="l2A-f0-3qg" customClass="CellBasicTableViewCell" customModule="Sample_Login" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l2A-f0-3qg" id="6dY-el-eNp" customClass="CellBasicTableViewCell" customModule="Sample_Login" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeg-EL-o7P">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="oeg-EL-o7P" secondAttribute="trailing" id="5hT-dN-JAD"/>
+                                                <constraint firstItem="oeg-EL-o7P" firstAttribute="top" secondItem="6dY-el-eNp" secondAttribute="top" id="GVm-Ld-jA0"/>
+                                                <constraint firstAttribute="bottom" secondItem="oeg-EL-o7P" secondAttribute="bottom" id="Xkc-0h-sGD"/>
+                                                <constraint firstItem="oeg-EL-o7P" firstAttribute="leading" secondItem="6dY-el-eNp" secondAttribute="leading" id="vV9-xi-YX0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="CellLabel" destination="oeg-EL-o7P" id="ise-X7-eb8"/>
+                                            <outlet property="label" destination="oeg-EL-o7P" id="B8m-Xs-wPP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sqQ-Zo-6mE" firstAttribute="bottom" secondItem="v2k-Li-WFg" secondAttribute="bottom" id="P4a-8G-t4T"/>
+                            <constraint firstItem="v2k-Li-WFg" firstAttribute="leading" secondItem="sqQ-Zo-6mE" secondAttribute="leading" id="R5X-Gc-D0J"/>
+                            <constraint firstItem="v2k-Li-WFg" firstAttribute="top" secondItem="sqQ-Zo-6mE" secondAttribute="top" id="VlY-js-qr1"/>
+                            <constraint firstItem="sqQ-Zo-6mE" firstAttribute="trailing" secondItem="v2k-Li-WFg" secondAttribute="trailing" id="rD0-Hq-UNh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sqQ-Zo-6mE"/>
+                    </view>
+                    <connections>
+                        <outlet property="listBai" destination="v2k-Li-WFg" id="P6u-0y-4gB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xWb-v4-Iih" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1224.8" y="-532.98350824587715"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="bDu-e1-Toh">
+            <objects>
+                <viewController id="5Pf-6H-qlY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XO5-je-h2Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gloomy-Old-Green-Wall-Abstract-Background-iphone-8-wallpaper-ilikewallpaper_com" translatesAutoresizingMaskIntoConstraints="NO" id="ObN-C6-odh">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SSL-3W-CKY" firstAttribute="trailing" secondItem="ObN-C6-odh" secondAttribute="trailing" id="BqE-bz-nsQ"/>
+                            <constraint firstItem="SSL-3W-CKY" firstAttribute="bottom" secondItem="ObN-C6-odh" secondAttribute="bottom" id="OR1-gV-bNP"/>
+                            <constraint firstItem="ObN-C6-odh" firstAttribute="leading" secondItem="SSL-3W-CKY" secondAttribute="leading" id="PEQ-64-a64"/>
+                            <constraint firstItem="ObN-C6-odh" firstAttribute="top" secondItem="SSL-3W-CKY" secondAttribute="top" id="tUH-U4-lzu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SSL-3W-CKY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Menu" id="FOY-Qo-Pzp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5bw-PS-dwV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-36" y="397"/>
+        </scene>
+        <!--Thi-->
+        <scene sceneID="Z1O-hE-0ec">
+            <objects>
+                <viewController id="38h-pi-iGg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="siI-9t-NUe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gloomy-Old-Green-Wall-Abstract-Background-iphone-8-wallpaper-ilikewallpaper_com" translatesAutoresizingMaskIntoConstraints="NO" id="val-2e-dbQ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="r3h-wq-U4h" firstAttribute="trailing" secondItem="val-2e-dbQ" secondAttribute="trailing" id="8Fh-x2-eSJ"/>
+                            <constraint firstItem="val-2e-dbQ" firstAttribute="leading" secondItem="r3h-wq-U4h" secondAttribute="leading" id="K6w-SW-FFC"/>
+                            <constraint firstItem="r3h-wq-U4h" firstAttribute="bottom" secondItem="val-2e-dbQ" secondAttribute="bottom" id="LXB-qm-R4C"/>
+                            <constraint firstItem="val-2e-dbQ" firstAttribute="top" secondItem="r3h-wq-U4h" secondAttribute="top" id="eVr-dh-dTC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="r3h-wq-U4h"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Thi" id="eCk-Gx-fIB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qun-XT-w5T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1114" y="244"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="DDg-Vb-Vm2">
+            <objects>
+                <tabBarController storyboardIdentifier="HomeTabbarID" automaticallyAdjustsScrollViewInsets="NO" id="PCG-VM-ofn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iDt-7g-tnK">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fSZ-M8-mVa" kind="relationship" relationship="viewControllers" id="dfV-l2-2Us"/>
+                        <segue destination="5Pf-6H-qlY" kind="relationship" relationship="viewControllers" id="xRR-MN-L24"/>
+                        <segue destination="38h-pi-iGg" kind="relationship" relationship="viewControllers" id="pGo-Gz-1nr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VXg-Vf-91W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-476" y="-279"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Gloomy-Old-Green-Wall-Abstract-Background-iphone-8-wallpaper-ilikewallpaper_com" width="1080" height="1920"/>
+    </resources>
+</document>
